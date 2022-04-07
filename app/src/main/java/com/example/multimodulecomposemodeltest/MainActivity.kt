@@ -47,18 +47,18 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun UserProfile(user: User) {
-	println("test")
+	println("User Profile Recomposition")
 	Text(text = user.name)
 }
 
 @Composable
 fun WrappedUserProfile(userUiState: UserUiState) {
-	println("test2")
+	println("Wrapped User Profile Recomposition")
 	Text(text = userUiState.user.name)
 }
 
 @Composable
 fun OtherContent(otherState: Int) {
-	println("test3")
+	println("Other Content Recomposition")
 	Text(text = otherState.toString())
 }

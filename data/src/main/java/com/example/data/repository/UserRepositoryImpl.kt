@@ -13,5 +13,4 @@ class UserRepositoryImpl @Inject constructor(
 	override fun observeUser(): Flow<User> = userApiExecutor.user
 
 	override suspend fun setUser() = userApiExecutor.setUser()
-
 }
