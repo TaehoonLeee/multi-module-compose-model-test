@@ -1,5 +1,6 @@
 package com.example.multimodulecomposemodeltest
 
+import androidx.compose.runtime.Stable
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.domain.interactor.ObserveUserUseCase
@@ -10,6 +11,7 @@ import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+@Stable
 data class UserUiState(
 	val user: User = User("1")
 )
