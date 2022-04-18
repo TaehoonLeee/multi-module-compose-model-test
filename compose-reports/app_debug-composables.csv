@@ -1,0 +1,5 @@
+package,name,composable,skippable,restartable,readonly,inline,isLambda,hasDefaults,defaultsGroup,groups,calls,
+com.example.multimodulecomposemodeltest.UserProfile,UserProfile,1,0,1,0,0,0,0,0,1,1,
+com.example.multimodulecomposemodeltest.WrappedUserProfile,WrappedUserProfile,1,1,1,0,0,0,0,0,1,1,
+com.example.multimodulecomposemodeltest.OtherContent,OtherContent,1,1,1,0,0,0,0,0,1,1,
+com.example.multimodulecomposemodeltest.ui.theme.MultiModuleComposeModelTestTheme,MultiModuleComposeModelTestTheme,1,1,1,0,0,0,1,0,2,2,

@@ -1,0 +1,17 @@
+stable class MainActivity {
+  <runtime stability> = Stable
+}
+stable class UserUiState {
+  unstable val user: User
+}
+unstable class MainViewModel {
+  unstable val setUserUseCase: SetUserUseCase
+  unstable val user: StateFlow<User>
+  unstable val wrappedUser: StateFlow<UserUiState>
+  unstable val _otherState: MutableStateFlow<Int>
+  unstable val otherState: StateFlow<Int>
+  <runtime stability> = Unstable
+}
+stable class ModelTestApplication {
+  <runtime stability> = Stable
+}

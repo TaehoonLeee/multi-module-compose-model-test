@@ -1,0 +1,13 @@
+restartable scheme("[androidx.compose.ui.UiComposable]") fun UserProfile(
+  unstable user: User
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun WrappedUserProfile(
+  stable userUiState: UserUiState
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun OtherContent(
+  stable otherState: Int
+)
+restartable skippable scheme("[0, [0]]") fun MultiModuleComposeModelTestTheme(
+  stable darkTheme: Boolean = @dynamic isSystemInDarkTheme($composer, 0)
+  stable content: Function2<Composer, Int, Unit>
+)
